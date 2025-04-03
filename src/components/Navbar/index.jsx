@@ -1,33 +1,62 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Logo from "../../assets/logo.png";
-import { FaChevronDown } from "react-icons/fa";
-import Uz from "../../assets/uz.png";
-import En from "../../assets/en.png";
-import Ru from "../../assets/ru.png";
+import { FaChevronDown, FaBars } from "react-icons/fa";
+import Uzb from "../../assets/uz.png"; 
+import Eng from "../../assets/en.png"; 
+import Ruu from "../../assets/ru.png"; 
 
 const languages = [
-    { code: "uz", flag: Uz },
-    { code: "en", flag: En },
-    { code: "ru", flag: Ru },
+    { code: "uz", flag: Uzb, name: "O'zbekcha" },
+    { code: "en", flag: Eng, name: "English" },
+    { code: "ru", flag: Ruu, name: "Русский" },
 ];
 
 export default function Navbar() {
-    const [selectedLang, setSelectedLang] = useState(languages[0]);
+    const { t, i18n } = useTranslation();
+    const defaultLang = languages.find(lang => lang.code === i18n.language) || languages[0];
+    const [selectedLang, setSelectedLang] = useState(defaultLang);
     const [isOpen, setIsOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang.code); 
+        setSelectedLang(lang);
+        setIsOpen(false);
+    };
+
+    useEffect(() => {
+        setSelectedLang(languages.find(lang => lang.code === i18n.language) || languages[0]);
+    }, [i18n.language]); 
 
     return (
         <header className="bg-white shadow-sm">
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 <a href="/" className="flex items-center">
-                    <img src={Logo} alt="" />
+                    <img src={Logo} alt="Logo" />
                 </a>
 
                 <nav className="hidden md:flex space-x-8">
-                    <p className="text-[#121212] leading-[100px] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">Asosiy sahifa</p>
-                    <p className="text-[#121212] leading-[100px] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">Biz haqimizda</p>
-                    <p className="text-[#121212] leading-[100px] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">Turlar</p>
-                    <p className="text-[#121212] leading-[100px] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">Kontaktlar</p>
+                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        {t("home")}
+                    </p>
+                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        {t("about")}
+                    </p>
+                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        {t("tours")}
+                    </p>
+                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        {t("contacts")}
+                    </p>
                 </nav>
+
+                <button
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className="md:hidden p-2 text-xl text-black"
+                >
+                    <FaBars />
+                </button>
 
                 <div className="relative inline-block">
                     <button
@@ -39,14 +68,11 @@ export default function Navbar() {
                     </button>
 
                     {isOpen && (
-                        <div className="absolute right-0 mt-1 w-24 bg-white overflow-hidden z-50">
+                        <div className="absolute right-0 mt-1 w-24 bg-white overflow-hidden z-50 shadow-md">
                             {languages.map((lang) => (
                                 <div
                                     key={lang.code}
-                                    onClick={() => {
-                                        setSelectedLang(lang);
-                                        setIsOpen(false);
-                                    }}
+                                    onClick={() => changeLanguage(lang)}
                                     className="flex items-center justify-center p-2 hover:bg-gray-100 cursor-pointer border-b last:border-none"
                                 >
                                     <img src={lang.flag} alt={lang.name} className="w-8 h-5 object-cover" />
@@ -55,8 +81,26 @@ export default function Navbar() {
                         </div>
                     )}
                 </div>
-
             </div>
+
+            {menuOpen && (
+                <div className="md:hidden bg-white shadow-md">
+                    <nav className="flex flex-col items-center space-y-4 py-4">
+                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                            {t("home")}
+                        </p>
+                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                            {t("about")}
+                        </p>
+                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                            {t("tours")}
+                        </p>
+                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                            {t("contacts")}
+                        </p>
+                    </nav>
+                </div>
+            )}
         </header>
     );
 }

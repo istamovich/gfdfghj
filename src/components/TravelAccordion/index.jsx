@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
+import { useTranslation } from "react-i18next";
 
 const TravelAccordion = () => {
     const [openItem, setOpenItem] = useState(2);
+    const { t } = useTranslation();
 
     const toggleItem = (index) => {
         setOpenItem(openItem === index ? -1 : index);
@@ -11,19 +12,16 @@ const TravelAccordion = () => {
 
     const items = [
         {
-            title: "Tajribali gidlar xizmati",
-            content:
-                "Siz uchun mukammal marshrutni yaratishga ishtiyoqli sayohat bo'yicha mutaxassislarimizdan ko'rsatmalar oling. Manzil takliflaridan tortib sayohat maslahatlarigacha sayohatingizni ajoyib qilish uchun shu yerdamiz.",
+            title: t('travelAccordion.items.0.title'),
+            content: t('travelAccordion.items.0.content'),
         },
         {
-            title: "Moslashuvchan xizmatlar",
-            content:
-                "Sayohat tajribangizni moslashtirilgan variantlar bilan moslang, sayohatingizning har bir jihati sizning afzalliklaringizga mos kelishini ta'minlang. Noyob uslubingizga mos keladigan turar joy, tadbirlar va boshqalarni tanlang.",
+            title: t('travelAccordion.items.1.title'),
+            content: t('travelAccordion.items.1.content'),
         },
         {
-            title: "24/7 Qo'llab quvvatlash",
-            content:
-                "24/7 mijozlarni qo'llab-quvvatlash xizmati bilan xotirjamlikni his qiling. Rejalashtirish jarayonida savollaringiz bo'ladimi yoki sayohat paytida yordam kerakmi, bizning jamoamiz sizni qo'llab-quvvatlash uchun doimo shu yerda.",
+            title: t('travelAccordion.items.2.title'),
+            content: t('travelAccordion.items.2.content'),
         },
     ];
 
@@ -32,14 +30,13 @@ const TravelAccordion = () => {
             <div className="bg-white px-6 py-12 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
                 <div className="lg:w-1/2 text-center lg:text-left">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                        Orzuyingdagi sayohatni rejalashtiring
+                        {t('travelAccordion.title')}
                     </h2>
                     <p className="text-gray-600 mb-6">
-                        O'zingizning orzuingizdagi sayohatga chiqayotganingizda, har bir tafsilotga e'tibor qaratamiz. Bu madaniy qochish,
-                        sarguzashtli ekspeditsiya yoki sohlida dam olish bo'ladimi, biz muammosiz va unutilmas sayohat tajribasini ta'minlaymiz.
+                        {t('travelAccordion.description')}
                     </p>
                     <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded shadow-lg transition">
-                        Bog'lanish
+                        {t('travelAccordion.contactButton')}
                     </button>
                 </div>
                 <div className="lg:w-1/2">
@@ -54,8 +51,8 @@ const TravelAccordion = () => {
                                     <motion.div
                                         animate={{ rotate: openItem === index ? 180 : 0 }}
                                         transition={{ duration: 0.3 }}
-                                        className={`w-4 h-4 flex items-center justify-center rounded-full ${openItem === index ? "bg-[#e1ac0c]" : "bg-[#ddd]"
-                                            }`}
+                                        className={`w-4 h-4 flex items-center justify-center rounded-full ${openItem === index ? "bg-[#e1ac0c]" : "bg-[#ddd]"}
+                                            `}
                                     >
                                         <div className="w-3 h-3 rounded-full"></div>
                                     </motion.div>
@@ -88,7 +85,6 @@ const TravelAccordion = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 

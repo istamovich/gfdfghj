@@ -1,0 +1,124 @@
+{
+    "home": "Home",
+    "about": "About Us",
+    "tours": "Tours",
+    "contacts": "Contacts",
+    "hero": {
+      "title": "Want to travel?",
+      "description": "Turn your travel dreams into reality: plan, explore, and create unforgettable memories.",
+      "button": "Learn More",
+      "form": {
+        "name": "Your Name...",
+        "location": "Your Location...",
+        "date": "Select Date",
+        "submit": "Book Now"
+      }
+    },
+    "explore": {
+      "title": "Easily explore destinations",
+      "trainImageAlt": "Train at station",
+      "trainTitle": "Affordable train tickets with us",
+      "trainDescription": "Hop on a train adventure and explore destinations worldwide. Whether it's beautiful landscapes, bustling cities, or cultural gems, our train services offer a unique and comfortable way to travel around the world. Immerse yourself in diverse cultures through our extensive train network!",
+      "planeImageAlt": "Plane in the sky",
+      "planeTitle": "Discover exciting offers for air travel",
+      "planeDescription": "Embark on an airborne adventure and explore destinations worldwide. Whether it's thrilling landscapes, vibrant cities, or cultural treasures, our airline services provide convenience and an excellent way to travel globally. Dive into diverse cultures with easy access to our vast air travel network.",
+      "globalDestinations": "Global destinations"
+    },
+    "discover": {
+      "title": "Explore Our Destinations",
+      "subtitle": "Discover Dubai, Turkey, and Sharm El Sheikh with us",
+      "destination1": {
+        "name": "Feel the luxury in Dubai",
+        "description": "The harmony of city and desert",
+        "longDescription": "Enjoy the luxury of Dubai's skyscrapers, shopping, and desert adventures. Discover the blend of culture and opulence in a city where modernity meets tradition."
+      },
+      "destination2": {
+        "name": "Discover Turkish Culture",
+        "description": "Historical wonders and stunning landscapes",
+        "longDescription": "Dive into Turkey’s rich history, from ancient ruins to vibrant markets. Experience the beauty, delicious food, and warm hospitality that make Turkey a must-visit destination."
+      },
+      "destination3": {
+        "name": "Relax in Sharm El Sheikh",
+        "description": "Sun, sea, and tranquility",
+        "longDescription": "Explore the stunning beaches and coral reefs of Sharm El Sheikh. Dive into crystal-clear waters, relax at luxury resorts, and experience the best of tropical relaxation."
+      },
+      "moreInfo": "More Info",
+      "bookNow": "Book Now"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Explore with confidence",
+      "experienceTitle": "Travel Experiences",
+      "experienceDescription": "Discover curated travel routes tailored to your desires, ensuring unforgettable adventures by experts.",
+      "bestRoutesTitle": "Best Routes",
+      "bestRoutesDescription": "Enjoy fully customized travel plans that match your unique interests and preferences, reflecting your travel aspirations.",
+      "packagesTitle": "Ready Travel Packages",
+      "packagesDescription": "Our packages ensure a seamless blend of convenience, adventure, and cultural immersion, providing an exceptional travel experience."
+    },
+    "travelAccordion": {
+      "title": "Plan Your Dream Trip",
+      "description": "We take care of every detail when you're on your dream trip, whether it's a cultural getaway, an adventurous expedition, or a beachside retreat. We're here to ensure a seamless and unforgettable travel experience.",
+      "contactButton": "Contact Us",
+      "items": [
+        {
+          "title": "Experienced Guides Service",
+          "content": "Get advice from our passionate travel experts who are eager to create the perfect itinerary for you. From destination suggestions to travel tips, we’re here to make your journey amazing."
+        },
+        {
+          "title": "Flexible Services",
+          "content": "Tailor your travel experience with customized options, ensuring every aspect of your trip aligns with your preferences. Choose accommodations, activities, and more that match your unique style."
+        },
+        {
+          "title": "24/7 Support",
+          "content": "Feel at ease with our 24/7 customer support service. Whether you have questions during the planning process or need help during your trip, our team is always here to assist you."
+        }
+      ]
+    },
+    "contactUs": "Contact Us",
+    "contact": "Contact",
+    "specialOffers": "Special Offers",
+    "chooseYourDreamVacation": "Choose your dream vacation",
+    "basicTraveler": "Basic Traveler",
+    "premiumTraveler": "Premium Traveler",
+    "maximalTraveler": "Maximal Traveler",
+    "customizedTravelPlan": "Customized Travel Plan",
+    "curatedDestinationGuides": "Curated Destination Guides",
+    "expertTravelDiscussion": "Expert Travel Discussion",
+    "customerSupport": "24/7 Support",
+    "flexiblePricing": "Flexible Pricing",
+    "luxuryHotelLocation": "Luxury Hotel Location",
+    "specialExperiences": "Special Experiences",
+    "personalGuide": "Personal Guide",
+    "customizedTravelPackages": "Customized Travel Packages",
+    "negotiablePricing": "Negotiable Pricing",
+    "vipTravelProgram": "VIP Travel Program",
+    "luxuryExperiences": "Luxury Experiences",
+    "flexibleNegotiablePricing": "Flexible and Negotiable Pricing",
+    "amazingImpressions": "Amazing Impressions",
+    "booking": {
+      "title": "Book Your Spot with Us!",
+      "subtitle": "Spend your vacation with us",
+      "director": "Director",
+      "directorName": "Nilufar Sadikova",
+      "phone": "+998951270090",
+      "bookNow": "Book Now",
+      "footer": {
+        "description": "Conquer the world with us. Your best partner in organizing travel.",
+        "links": {
+          "title": "Useful Links",
+          "Blog": "Blog",
+          "Biz bilan Aloqa": "Contact Us",
+          "Biz Haqimizda": "About Us",
+          "Maxfiylik Siyosati": "Privacy Policy"
+        },
+        "contact": {
+          "title": "Contact Information",
+          "description": "Get ready for your next trip and contact us for personal travel assistance and inquiries.",
+          "phone": "Phone:",
+          "email": "Email:",
+          "address": "Address:"
+        }
+      }
+    }
+  }
+  

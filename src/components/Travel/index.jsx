@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const destinations = [
     {
@@ -37,17 +38,18 @@ const destinations = [
         visits: 76,
         image: "https://www.flymoderntour.uz/img/images/saudi.jpg",
     },
-]
+];
 
 export default function Travel() {
-    const [activeSlide, setActiveSlide] = useState(0)
+    const { t } = useTranslation(); 
+    const [activeSlide, setActiveSlide] = useState(0);
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-20">
             <div className="text-center mb-8">
-                <h2 className="text-[17px] block m-0 text-[#e1ac0c]">Bizning mashhur manzillarimiz</h2>
+                <h2 className="text-[17px] block m-0 text-[#e1ac0c]">{t('tours')}</h2> 
                 <p className="mt-[14px] mb-0 text-[23px] font-semibold text-[#232323] tracking-[0.5px]">
-                    Ushbu yo'nalishlar bilan haqiqatan ham o'ziga xos qiladigan go'zallik, madaniyat va tajribalarni kashf eting.
+                    {t('hero.description')} 
                 </p>
             </div>
 
@@ -65,7 +67,7 @@ export default function Travel() {
                         <div className="absolute inset-0 bg-black bg-opacity-30" />
                         <div className="absolute bottom-0 left-0 p-4 text-white">
                             <h3 className="text-xl font-bold">{destination.name}</h3>
-                            <p className="text-sm">{destination.visits} band qilingan</p>
+                            <p className="text-sm">{destination.visits} {t('hero.form.submit')}</p>
                         </div>
                     </div>
                 ))}
@@ -82,6 +84,5 @@ export default function Travel() {
                 ))}
             </div>
         </div>
-    )
+    );
 }
-

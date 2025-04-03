@@ -1,0 +1,123 @@
+{
+  "home": "Bosh sahifa",
+  "about": "Biz haqimizda",
+  "tours": "Turlar",
+  "contacts": "Aloqa",
+  "hero": {
+    "title": "Sayohat qilishni xohlaysizmi?",
+    "description": "Sayohat orzularingizni haqiqatga aylantiring: rejalashtiring, kashf qiling va unutilmas xotiralar yarating.",
+    "button": "Ko'proq bilish",
+    "form": {
+      "name": "Ismingiz...",
+      "location": "Manzilingiz...",
+      "date": "Sana tanlang",
+      "submit": "Joy band qilish"
+    }
+  },
+  "explore": {
+    "title": "Maqsadlarni osongina o'rganing",
+    "trainImageAlt": "Stansiyadagi poezd",
+    "trainTitle": "Biz bilan arzon temir yo'l chiptalari",
+    "trainDescription": "Temir yo'l sarguzashtiga kirib, dunyo bo'ylab yo'nalishlarni kashf eting. Go'zal landshaftlar, gavjum shaharlar yoki madaniy boyliklar bo'lsin, bizning temir yo'l xizmatlarimiz sizga noyob va qulay sayohatni taqdim etadi. Keng temir yo'l tarmog'imiz orqali turli madaniyatlar bilan tanishish imkoniyatini qo'lga kiriting!",
+    "planeImageAlt": "Havo kemasi osmonida",
+    "planeTitle": "Havo sayohatlari uchun qiziqarli takliflarni kashf eting",
+    "planeDescription": "Havo sarguzashtiga boring va dunyo bo'ylab yo'nalishlarni kashf eting. Hayajonli landshaftlar, jonli shaharlar yoki madaniy xazinalar bo'lsin, bizning aviakompaniyalarimiz sizga qulay va ajoyib sayohat qilish imkoniyatini taqdim etadi. Keng havo tarmog'imiz orqali turli madaniyatlar bilan tanishish oson!",
+    "globalDestinations": "Global manzillar"
+  },
+  "discover": {
+    "title": "Maqsadlarni kashf eting",
+    "subtitle": "Dubay, Turkiya va Sharm El Sheyxn biz bilan kashf eting",
+    "destination1": {
+      "name": "Dubayda hashamatni his eting",
+      "description": "Shahar va sahro uyg'unligi",
+      "longDescription": "Dubayning osmono'par binolari, hashamatli xaridlari va cho'l sarguzashtlarining boy'ligidan zavqlaning. Madaniyat va isrofgarchilikning ajoyib uyg'unligini taklif qiluvchi an'analar zamonaviylika mos keladigan shaharni o'rganing."
+    },
+    "destination2": {
+      "name": "Turkiya madaniyatini kashf eting",
+      "description": "Tarixiy mo'jizalar va hayratlanarli manzaralar",
+      "longDescription": "Turkiyaning qadimiy xarobalaridan tortib jonli bozorlarigacha bo'lgan jozibali tarixga sho'ng'ing. Turkiyani ziyorat qilish kerak bo'lgan manzilga aylantiradigan go'zal manzaralar, mazali taomlar va samimiy mehmondo'stlikni kashf eting."
+    },
+    "destination3": {
+      "name": "Sharm El-Sheykhda dam oling",
+      "description": "Quyosh, dengiz va osoyishtalik",
+      "longDescription": "Sharm al-Shayning ajoyib plyajlari va marjon riflariga boring. Tiniq suvlarga sho'ng'ing, hashamatli dam olish maskanlarida dam oling va ushbu tropik jannatda eng yaxshi dam olishni his qiling."
+    },
+    "moreInfo": "Ko'proq bilish",
+    "bookNow": "Band qilish"
+  },
+  "services": {
+    "title": "Bizning xizmatlar",
+    "subtitle": "Ishonch bilan kashf eting",
+    "experienceTitle": "Sayohat tajribalari",
+    "experienceDescription": "Sizning xohishingizga moslashtirilgan yuqori sifatli tajribalarni ta'minlab, puxta ishlab chiqilgan sayohat marshrutlarini kashf eting. Mutaxassislar tomonidan tayyorlangan paketlarimiz unutilmas sarguzashtlarni kafolatlaydi.",
+    "bestRoutesTitle": "Eng yaxshi marshrutlar",
+    "bestRoutesDescription": "Sizning noyob qiziqishlaringiz va istaklaringizga mos keladigan to'liq moslashtirilgan sayohat rejalaridan rohatlaning. Biz sizning shaxsiy imtiyozlaringiz va sayohat intilishlaringizni aks ettiruvchi sayohatlarni yaratishga ixtisoslashganmiz.",
+    "packagesTitle": "Tayyor sayohat yo'nalishlari",
+    "packagesDescription": "Bizning paketlarimiz qulaylik, sarguzasht va madaniy suvga cho'milishning uzluksiz uyg'unligini ta'minlaydi va ajoyib sayohat tajribasini ta'minlaydi."
+  },
+  "travelAccordion": {
+    "title": "Orzuyingdagi sayohatni rejalashtiring",
+    "description": "O'zingizning orzuingizdagi sayohatga chiqayotganingizda, har bir tafsilotga e'tibor qaratamiz. Bu madaniy qochish, sarguzashtli ekspeditsiya yoki sohlida dam olish bo'ladimi, biz muammosiz va unutilmas sayohat tajribasini ta'minlaymiz.",
+    "contactButton": "Bog'lanish",
+    "items": [
+      {
+        "title": "Tajribali gidlar xizmati",
+        "content": "Siz uchun mukammal marshrutni yaratishga ishtiyoqli sayohat bo'yicha mutaxassislarimizdan ko'rsatmalar oling. Manzil takliflaridan tortib sayohat maslahatlarigacha sayohatingizni ajoyib qilish uchun shu yerdamiz."
+      },
+      {
+        "title": "Moslashuvchan xizmatlar",
+        "content": "Sayohat tajribangizni moslashtirilgan variantlar bilan moslang, sayohatingizning har bir jihati sizning afzalliklaringizga mos kelishini ta'minlang. Noyob uslubingizga mos keladigan turar joy, tadbirlar va boshqalarni tanlang."
+      },
+      {
+        "title": "24/7 Qo'llab quvvatlash",
+        "content": "24/7 mijozlarni qo'llab-quvvatlash xizmati bilan xotirjamlikni his qiling. Rejalashtirish jarayonida savollaringiz bo'ladimi yoki sayohat paytida yordam kerakmi, bizning jamoamiz sizni qo'llab-quvvatlash uchun doimo shu yerda."
+      }
+    ]
+  },
+  "contactUs": "Biz bilan bog'laning",
+  "contact": "Bog'lanish",
+  "specialOffers": "Maxsus Takliflar",
+  "chooseYourDreamVacation": "O'zingiz orzu qilgan ta'tilni tanlang",
+  "basicTraveler": "Asosiy Sayohatchi",
+  "premiumTraveler": "Premium Sayohatchi",
+  "maximalTraveler": "Maksimal Sayohatchi",
+  "customizedTravelPlan": "Moslashtirilgan Sayohat Rejasi",
+  "curatedDestinationGuides": "Shakllantirilgan Manzil Qo'llanmalar",
+  "expertTravelDiscussion": "Mutaxassis Bilan Sayohat Muhokaması",
+  "customerSupport": "24/7 Xizmat Ko'rsatish",
+  "flexiblePricing": "Moslashuvchan Narxlar",
+  "luxuryHotelLocation": "Luks Mekhmonxona Joylashuvi",
+  "specialExperiences": "Maxsus Tajribalar",
+  "personalGuide": "Maxsus Yo'lboshlovchi",
+  "customizedTravelPackages": "Moslashtirilgan Sayohat Paketlari",
+  "negotiablePricing": "Muzokaralar uchun Narxlar",
+  "vipTravelProgram": "VIP Sayohat Dasturi",
+  "luxuryExperiences": "Maxsus Lyuks Tajribalar",
+  "flexibleNegotiablePricing": "Moslashuvchan va Muzokaralar uchun Narxlar",
+  "amazingImpressions": "Ajoyib Taassurotlar",
+  "booking": {
+    "title": "Biz bilan o'z joyingizni band qiling!",
+    "subtitle": "Ta'tilingizni biz bilan o'tkazing",
+    "director": "Direktor",
+    "directorName": "Nilufar Sadikova",
+    "phone": "+998951270090",
+    "bookNow": "Joy Band Qilish",
+    "footer": {
+      "description": "Biz bilan dunyoni zabt eting. Sayohat tashkil qilishda eng yaxshi hamkoringiz.",
+      "links": {
+        "title": "Foydali Havolalar",
+        "Blog": "Blog",
+        "Biz bilan Aloqa": "Biz bilan Aloqa",
+        "Biz Haqimizda": "Biz Haqimizda",
+        "Maxfiylik Siyosati": "Maxfiylik Siyosati"
+      },
+      "contact": {
+        "title": "Aloqa Ma'lumoti",
+        "description": "Keyingi sayohatingizga tayyor bo'lib, shaxsiy sayohat yordam va so'rovnoma uchun biz bilan bog'laning.",
+        "phone": "Telefon:",
+        "email": "Email:",
+        "address": "Manzil:"
+      }
+    }
+  }
+}

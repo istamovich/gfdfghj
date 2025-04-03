@@ -9,6 +9,7 @@ import TravelAccordion from './components/TravelAccordion';
 import Offers from './components/Offers';
 import Booking from './components/Booking';
 import Footer from './components/Footer';
+import "../i18n";
 
 const App = () => {
   return (
