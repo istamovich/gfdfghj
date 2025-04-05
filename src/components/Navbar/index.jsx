@@ -25,28 +25,36 @@ export default function Navbar() {
         setIsOpen(false);
     };
 
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+            setMenuOpen(false); 
+        }
+    };
+
     useEffect(() => {
         setSelectedLang(languages.find(lang => lang.code === i18n.language) || languages[0]);
-    }, [i18n.language]); 
+    }, [i18n.language]);
 
     return (
-        <header className="bg-white shadow-sm">
-            <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <header className="bg-white w-full z-50">
+            <div className="container mx-auto flex justify-between items-center">
                 <a href="/" className="flex items-center">
                     <img src={Logo} alt="Logo" />
                 </a>
 
                 <nav className="hidden md:flex space-x-8">
-                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                    <p onClick={() => scrollToSection("home")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                         {t("home")}
                     </p>
-                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                    <p onClick={() => scrollToSection("about")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                         {t("about")}
                     </p>
-                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                    <p onClick={() => scrollToSection("tours")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                         {t("tours")}
                     </p>
-                    <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                    <p onClick={() => scrollToSection("contacts")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                         {t("contacts")}
                     </p>
                 </nav>
@@ -86,16 +94,16 @@ export default function Navbar() {
             {menuOpen && (
                 <div className="md:hidden bg-white shadow-md">
                     <nav className="flex flex-col items-center space-y-4 py-4">
-                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        <p onClick={() => scrollToSection("home")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                             {t("home")}
                         </p>
-                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        <p onClick={() => scrollToSection("about")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                             {t("about")}
                         </p>
-                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        <p onClick={() => scrollToSection("tours")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                             {t("tours")}
                         </p>
-                        <p className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
+                        <p onClick={() => scrollToSection("contacts")} className="text-[#121212] text-[17px] font-bold cursor-pointer hover:text-amber-500 duration-700">
                             {t("contacts")}
                         </p>
                     </nav>

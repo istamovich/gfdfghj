@@ -15,15 +15,23 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <div id="home" className="scroll-mt-20">
+        <Hero />
+      </div>
       <Travel />
       <Explore />
-      <Discover />
-      <Services />
+      <div id="about" className="scroll-mt-20">
+        <Discover />
+      </div>
+      <div id="tours" className="scroll-mt-20">
+        <Services />
+      </div>
       <TravelAccordion />
       <Offers />
-      <Booking />
-      <Footer />
+      <div id="contacts" className="scroll-mt-20">
+        <Booking />
+        <Footer />
+      </div>
     </div>
   );
 }

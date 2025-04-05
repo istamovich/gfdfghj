@@ -3,6 +3,13 @@ import { useTranslation } from 'react-i18next';
 const PricingCard = ({ title, features }) => {
   const { t } = useTranslation();
 
+  const scrollToContacts = () => {
+    const section = document.getElementById('contacts');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="flex flex-col w-full max-w-sm bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
       <div className="bg-yellow-500 text-white p-6 text-center">
@@ -19,7 +26,10 @@ const PricingCard = ({ title, features }) => {
           ))}
         </ul>
         <div className="text-center mt-auto">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded transition">
+          <button
+            onClick={scrollToContacts}
+            className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded transition"
+          >
             {t('contact')}
           </button>
         </div>
@@ -27,8 +37,6 @@ const PricingCard = ({ title, features }) => {
     </div>
   );
 };
-
-
 
 const Offers = () => {
   const { t } = useTranslation();

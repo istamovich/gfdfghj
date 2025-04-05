@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -17,12 +19,24 @@ export default function Hero() {
 
     try {
       await axios.post(url, {
-        chat_id: chat_id,
+        chat_id,
         text: `${t('hero.form.name')}: ${name}\n${t('hero.form.location')}: ${location}\n${t('hero.form.date')}: ${date}`,
       });
-      alert(t('yuborildi'));
+      toast.success(t('yuborildi'));
+
+      setName('');
+      setLocation('');
+      setDate('2024-07-22');  
     } catch (error) {
       console.log('Error sending message', error);
+      toast.error(t('hero.form.error')); 
+    }
+  };
+
+  const scrollToContacts = () => {
+    const contactSection = document.getElementById("about");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -31,7 +45,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.musement.com/cover/0003/65/thumb_264225_cover_header.jpeg"
-          alt="Dubai cityscape with palm trees and Burj Al Arab"
+          alt="Dubai cityscape"
           className="object-cover w-full h-full"
         />
       </div>
@@ -44,7 +58,10 @@ export default function Hero() {
         <p className="text-[18px] sm:text-[22px] text-center sm:text-left text-white tracking-wide drop-shadow-md max-w-3xl mx-auto sm:mx-0">
           {t('hero.description')}
         </p>
-        <button className="w-[150px] h-[50px] inline-block mt-5 bg-[#e1ac0c] drop-shadow-md text-white text-[15px] font-medium px-4 py-2 border-2 border-[#e1ac0c] transition-all duration-500 mx-auto sm:mx-0">
+        <button
+          onClick={scrollToContacts}
+          className="w-[150px] h-[50px] inline-block mt-5 bg-[#e1ac0c] drop-shadow-md text-white text-[15px] font-medium px-4 py-2 border-2 border-[#e1ac0c] transition-all duration-500 mx-auto sm:mx-0"
+        >
           {t('hero.button')}
         </button>
       </div>
@@ -85,6 +102,8 @@ export default function Hero() {
           </button>
         </form>
       </div>
+
+      <ToastContainer />
     </div>
   );
 }

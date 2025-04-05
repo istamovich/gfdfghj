@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Services() {
-    const { t } = useTranslation(); // Using translation hook
+    const { t } = useTranslation(); 
 
     return (
         <div className="container mx-auto px-4 py-12 max-w-6xl">
